@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="styles.css" />
+
+    <title>Income Calculator</title>
+    
+</head>
+<body>
+    <!-- First Member -->
+    <label>Name</label>
+    <input type="text" id="name1" placeholder="First Member" required>
+    
+  <!-- Input for Year of Birth -->
+    <label for="yearOfBirth">Year of Birth:</label>
+    <input type="number" id="yearOfBirth" placeholder="Enter year of birth" oninput="calculateAge()" required>
+
+       <!-- Display Age -->
+    <label for="age">Age:</label>
+    <input type="text" id="age" placeholder="Calculated age" readonly>
+  
+  <!-- Display Company -->
+    <label>Company </label>
+    <input type="text" id="company1" placeholder="First Member" required>
+    <label for="salary1">Salary:</label>
+    <input type="number" id="salary1" placeholder="Enter salary" required>
+    
+    <br><br>
+
+    <label for="frequency1">Choose frequency:</label>
+    <select id="frequency1">
+        <option value="weekly">Weekly</option>
+        <option value="bi-weekly">Bi-Weekly</option>
+      <option value="twice-a-month">Twice-a-month</option>
+        <option value="monthly">Monthly</option>
+        <option value="annual">Annual</option>
+    </select>
+
+    <br><br>
+
+    <button onclick="calculateIncome(1)">Calculate Income for Member 1</button>
+
+    <br><br>
+
+    <div id="result1"></div>
+    
+    <!-- Second Member -->
+    <label>Name</label>
+    <input type="text" id="name2" placeholder="Second Member/Income" required>
+    
+   <!-- Input for Year of Birth -->
+    <label for="yearOfBirth2">Year of Birth:</label>
+    <input type="number" id="yearOfBirth2" placeholder="Enter year of birth" oninput="calculateAge2()" required>
+
+       <!-- Display Age -->
+    <label for="age2">Age:</label>
+    <input type="text" id="age2" placeholder="Calculated age" readonly>
+  
+   <!-- Display Company -->
+    <label>Company</label>
+    <input type="text" id="company2" placeholder="Second Member/Income" required>
+    <label for="salary2">Salary:</label>
+    <input type="number" id="salary2" placeholder="Enter salary" required>
+    
+    <br><br>
+
+    <label for="frequency2">Choose frequency:</label>
+    <select id="frequency2">
+        <option value="weekly">Weekly</option>
+        <option value="bi-weekly">Bi-Weekly</option>
+        <option value="monthly">Monthly</option>
+        <option value="annual">Annual</option>
+    </select>
+
+    <br><br>
+
+    <button onclick="calculateIncome(2)">Calculate Income for Member 2</button>
+
+    <br><br>
+
+    <div id="result2"></div>
+    
+    <!-- Third Member -->
+    <label>Name</label>
+    <input type="text" id="name3" placeholder="Third Member/Income" required>
+    
+     <!-- 3rd - Input for Year of Birth -->
+    <label for="yearOfBirth3">Year of Birth:</label>
+    <input type="number" id="yearOfBirth3" placeholder="Enter year of birth" oninput="calculateAge3()" required>
+
+       <!-- 3rd - Display Age -->
+    <label for="age3">Age:</label>
+    <input type="text" id="age3" placeholder="Calculated age" readonly>
+  
+    <!-- 3rd - Display Company -->
+    <label>Company</label>
+    <input type="text" id="company3" placeholder="Third Member/Income" required>
+    <label for="salary3">Salary:</label>
+    <input type="number" id="salary3" placeholder="Enter salary" required>
+    
+    <br><br>
+
+    <label for="frequency3">Choose frequency:</label>
+    <select id="frequency3">
+        <option value="weekly">Weekly</option>
+        <option value="bi-weekly">Bi-Weekly</option>
+        <option value="monthly">Monthly</option>
+        <option value="annual">Annual</option>
+    </select>
+
+    <br><br>
+
+    <button onclick="calculateIncome(3)">Calculate Income for Member 3</button>
+
+    <br><br>
+
+    <div id="result3"></div>
+    
+    <!-- Fourth Member -->
+    <label>Name</label>
+    <input type="text" id="name4" placeholder="Fourth Member/Income" required>
+    
+   <!-- 4th - Input for Year of Birth -->
+    <label for="yearOfBirth4">Year of Birth:</label>
+    <input type="number" id="yearOfBirth4" placeholder="Enter year of birth" oninput="calculateAge4()" required>
+
+       <!-- 3rd - Display Age -->
+    <label for="age4">Age:</label>
+    <input type="text" id="age4" placeholder="Calculated age" readonly>
+  
+    <label>Company</label>
+    <input type="text" id="company4" placeholder="Fourth Member/Income" required>
+    <label for="salary4">Salary:</label>
+    <input type="number" id="salary4" placeholder="Enter salary" required>
+    
+    <br><br>
+
+    <label for="frequency4">Choose frequency:</label>
+    <select id="frequency4">
+        <option value="weekly">Weekly</option>
+        <option value="bi-weekly">Bi-Weekly</option>
+        <option value="monthly">Monthly</option>
+        <option value="annual">Annual</option>
+    </select>
+
+    <br><br>
+
+    <button onclick="calculateIncome(4)">Calculate Income for Member 4</button>
+
+    <br><br>
+
+    <div id="result4"></div>
+  
+    <label>Total</label>
+    <input type="number" id="total" placeholder="All Income" step="any" readonly>
+    <button onclick="calculateTotal()">Calculate Total Income</button>
+  
+<div id="qualificationStatus" class="qualification-status"></div>
+       
+
+        </div>
+    <script src="script.js">       </script>
+</body>
+</html>
